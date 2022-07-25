@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.bkimg {
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(13, 20, 46, 0.7), rgba(11, 19, 49, 0.7)), url("https://img.freepik.com/premium-photo/woman-works-office-blue-background-concept-workspace-working-computer-freelance-banner_164357-1144.jpg?w=2000");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.testimonials {
+    width: 67%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+.roww {
+    margin-top: 5%;
+
+
+}
