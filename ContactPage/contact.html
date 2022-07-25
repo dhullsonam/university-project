@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="../index.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+</head>
+<body>
+<div class="bkimg">
+    <div class="navigationBar">
+        <img src="../images/logo.png" class="logo nav-link">
+        <div class="text-box">
+            <div id="googleMap"></div>
+        </div>
+        <div class="contactinfo">
+            <p> Email : kurukshetraUniversity@gmail.com</p>
+            <p>Phone Number :  01744-2745667</p>
+        </div>
+        <div class="naviagtionItem">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../ContactPage/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../AboutPage/about.html">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="../Blogpage/blog.html">Blog</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="../CoursePage/course.html">Courses</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD19cqU2rIzBHOPL_t8GhJJ9cmi-HNpULg&callback=initialize"></script>
+<script>
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(29.95862,76.8173414),
+            fullscreenControl: false
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap'),
+            mapOptions);
+
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            animation: google.maps.Animation.BOUNCE,
+            //icon: 'img/map-marker.png',
+            map: map
+        });
+    }
+</script>
+
+<!--<div id="googleMap"></div>-->
+
+<footer class="footer">
+
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue mi, pellentesque non Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit.<br> Quisque augue mi, pellentesque non consectetur adipiscing elit. Quisque
+        augue mi, pellentesque non
+    </p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
