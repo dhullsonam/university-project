@@ -18,7 +18,7 @@
 .aboutcontainer{
     width: 50%;
     position: absolute;
-    top: 70%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -34,8 +34,7 @@
     text-align: left;
 }
 .footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    top:100%;
     position: absolute;
+    width: 100%;
 }
