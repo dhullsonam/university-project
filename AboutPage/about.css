@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bkimg{
+    min-height: 70vh;
+    width: 100%;
+    /*background-image: linear-gradient(rgba(13, 20, 46, 0.7), rgba(11, 19, 49, 0.7)), url("../images/about.jpg");*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.navigationBar{
+    background-color: rgba(5, 5, 19, 0.96);
+}
+.aboutcontainer{
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*border: 1px solid red;*/
+
+    margin :auto;
+}
+.aboutcontainer p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+    text-align: left;
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
